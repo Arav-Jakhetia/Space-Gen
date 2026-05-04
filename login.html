@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/star.css" />
+  <link rel="stylesheet" href="styles/login.css" />
+  <link rel="stylesheet" href="styles/input.css" />
+  <link rel="stylesheet" href="styles/checkbox.css" />
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+
+  <div class="card" aria-label="Login form">
+    <div class="title">Welcome Back</div>
+    <p class="sub">Log in to continue your journey.</p>
+
+    <form id="login">
+      <label for="email">Email</label>
+      <input id="email" type="email" class="field" required />
+
+      <label for="pass">Password</label>
+      <input id="pass" type="password" class="field" required />
+
+      <input id="go" type="button" value="Login" />
+    </form>
+
+    <div class="switch">
+      I have no account?
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <script src="scripts/star.js"></script>
+  <script src="scripts/login.js"></script>
+</body>
+</html>

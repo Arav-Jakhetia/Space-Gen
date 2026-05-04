@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Gen | Simulation & Merch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/star.css" />
+  <link rel="stylesheet" href="styles/dashboard.css" />
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+
+  <header>
+    <a class="brand" href="index.html">
+      <span>Space Gen</span>
+    </a>
+
+    <div class="header-title">Dashboard</div>
+
+    <nav class="nav-menu" aria-label="Main menu">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="simulation.html">Simulation</a>
+      <a href="merch.html">Merch</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <article class="hero-main">
+        <p class="eyebrow">Mission Control</p>
+        <h1>Welcome to Space Gen.</h1>
+        <p>
+          Explore your solar-system modules, keep mission visuals in view,
+          and track upcoming merch drops from one control layer.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="simulation.html">Open Simulation</a>
+          <a class="btn ghost" href="merch.html">View Merch</a>
+        </div>
+        <div class="hero-metrics" aria-label="Quick stats">
+          <article class="metric">
+            <strong>8</strong>
+            <span>Planets Live</span>
+          </article>
+          <article class="metric">
+            <strong>650+</strong>
+            <span>Asteroids Simulated</span>
+          </article>
+          <article class="metric">
+            <strong>24/7</strong>
+            <span>Mission Feed</span>
+          </article>
+        </div>
+      </article>
+
+      <aside class="hero-side">
+        <h2>Merch Spotlight</h2>
+        <p>Fresh picks curated for explorers. Grab your favorites before limited runs close.</p>
+        <ul class="side-list" aria-label="Merch highlights">
+          <li>Nebula Hoodie: New arrival</li>
+          <li>Orbit Tee: Back in stock</li>
+          <li>Mission Patch Pack: Limited</li>
+          <li>Explorer Bottle: Trending</li>
+        </ul>
+        <a class="btn ghost" href="merch.html">Shop Spotlight</a>
+      </aside>
+    </section>
+
+    <section class="cards-shell">
+      <div class="section-head">
+        <h2>Control Deck</h2>
+        <p>Jump into core features quickly and track what is trending across simulation and merch.</p>
+      </div>
+
+      <div class="cards">
+        <article class="panel">
+          <span class="panel-kicker">Simulation</span>
+          <h3>Simulation Access</h3>
+          <p>Enter the 3D scene and inspect orbital motion, scale differences, and asteroid activity.</p>
+          <a class="panel-link" href="simulation.html">Launch now</a>
+        </article>
+
+        <article class="panel">
+          <span class="panel-kicker">Store</span>
+          <h3>Featured Merch</h3>
+          <p>Check mission-themed apparel, collector bundles, and limited drops before they close.</p>
+          <a class="panel-link" href="merch.html">Browse store</a>
+        </article>
+
+        <article class="panel">
+          <span class="panel-kicker">Planet Feed</span>
+          <h3>Planet Highlights</h3>
+          <p>All major planets are live with textured renders and dedicated exploration pages.</p>
+          <a class="panel-link" href="simulation.html">Open orbit map</a>
+        </article>
+
+        <article class="panel">
+          <span class="panel-kicker">Community</span>
+          <h3>Community Picks</h3>
+          <p>Top rated this week: Earth poster set, launch hoodie, and collector pin trio.</p>
+          <a class="panel-link" href="merch.html">See trending picks</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/star.js"></script>
+</body>
+</html>

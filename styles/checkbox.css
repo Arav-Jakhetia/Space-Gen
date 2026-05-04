@@ -1,0 +1,75 @@
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 30px;
+  user-select: none;
+}
+
+.mark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 50%;
+  background: #ffeded38;
+  transition: all 0.2s ease;
+  opacity: 0.4;
+}
+
+.check input:checked ~ .mark {
+  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
+.mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .mark:after {
+  display: block;
+}
+
+.check .mark:after {
+  left: 0.61em;
+  top: 0.43em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+.agree.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.agree .text {
+  font-size: 13px;
+  color: #bcc8df;
+}
+
+.panel::before,
+.card::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+
+

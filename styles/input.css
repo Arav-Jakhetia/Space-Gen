@@ -1,0 +1,35 @@
+.input,
+.field {
+  font-size: 16px;
+  padding: 12px 14px;
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 12px;
+  background: rgba(5, 10, 22, 0.75);
+  color: #e8ecf3;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.input::placeholder,
+.field::placeholder {
+  color: #72809f;
+}
+
+.input:focus,
+.field:focus {
+  outline: none;
+  border-color: rgba(72, 209, 255, 0.75);
+  box-shadow: 0 0 0 3px rgba(72, 209, 255, 0.12);
+}
+
+.panel::before,
+.card::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+
+

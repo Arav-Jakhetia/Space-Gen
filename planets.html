@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planets | Space Gen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/planet-viewer.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124.0/build/three.min.js"></script>
+</head>
+<body>
+  <main class="earth-layout">
+    <section class="viewer" id="planet-viewer" aria-label="Planet simulation">
+      <canvas id="c"></canvas>
+    </section>
+
+    <aside class="info-panel" id="planet-info-panel" aria-label="Planet details">
+      <h1 id="planet-name">Earth</h1>
+      <p class="lead" id="planet-lead"></p>
+
+      <div class="facts" id="planet-facts"></div>
+
+      <p class="note" id="planet-note"></p>
+
+      <div id="planet-details"></div>
+    </aside>
+  </main>
+  <script src="scripts/planets-page.js"></script>
+  <script src="scripts/planet-viewer.js"></script>
+</body>
+</html>
